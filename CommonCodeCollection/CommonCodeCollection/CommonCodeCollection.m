@@ -353,4 +353,19 @@ done:
     return newimage;
 }
 
+
++ (void)deleteFile:(NSString *)path
+{
+    if ([path hasPrefix:@"http://"])
+        return;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL _isDir;
+    if ([fileManager fileExistsAtPath:path isDirectory:&_isDir]) {
+        if (!_isDir) {
+            [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
+            return;
+        }
+    }
+}
+
 @end

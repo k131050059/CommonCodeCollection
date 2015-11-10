@@ -56,6 +56,14 @@
 + (UIImage *)thumbnailWithImageWithoutScale:(UIImage *)image size:(CGSize)asize;
 
 
+
+
+/*
+ 只做删除文件操作。
+ */
++ (void)deleteFile:(NSString *)path;
+
+
 //
 //
 //
