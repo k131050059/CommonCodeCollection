@@ -9,6 +9,27 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @interface CommonCodeCollection : NSObject
+//rgb转换
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+//是否是4寸屏幕  ip5 ip5s
+#define isFourInch ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//5s 之后 包括6、 6plus、 6s、 6sPlus
+#define iPhone5SLater [[UIScreen mainScreen] currentMode].size.width>640.0f
+
+//ios7 之后的系统
+#define IOS7_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+
+//获取屏幕宽高
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+
 
 /*
 
@@ -46,8 +67,7 @@
 
 + (NSString*)getMD5WithData:(NSData *)data;
 
-+(NSString*)getFileMD5WithPath:(NSString*)path;
-
++ (NSString*)getFileMD5WithPath:(NSString*)path;
 
 
 /*
