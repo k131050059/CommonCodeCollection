@@ -1,2 +1,2 @@
 # CommonCodeCollection
-学用代码集合。
+常用代码集合。
