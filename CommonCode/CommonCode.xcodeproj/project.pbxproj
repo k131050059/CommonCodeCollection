@@ -13,6 +13,7 @@
 		0C64441A207EF8580040C6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C644419207EF8580040C6F0 /* Assets.xcassets */; };
 		0C64441D207EF8580040C6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C64441B207EF8580040C6F0 /* LaunchScreen.storyboard */; };
 		0C644420207EF8580040C6F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C64441F207EF8580040C6F0 /* main.m */; };
+		0C64442E207EF8CC0040C6F0 /* CommonCodeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C64442D207EF8CC0040C6F0 /* CommonCodeCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		0C64441C207EF8580040C6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C64441E207EF8580040C6F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C64441F207EF8580040C6F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C64442C207EF8CC0040C6F0 /* CommonCodeCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCodeCollection.h; sourceTree = "<group>"; };
+		0C64442D207EF8CC0040C6F0 /* CommonCodeCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCodeCollection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		0C644404207EF8540040C6F0 = {
 			isa = PBXGroup;
 			children = (
+				0C64442B207EF8CC0040C6F0 /* CommonCodeCollection */,
 				0C64440F207EF8540040C6F0 /* CommonCode */,
 				0C64440E207EF8540040C6F0 /* Products */,
 			);
@@ -69,6 +73,16 @@
 				0C64441F207EF8580040C6F0 /* main.m */,
 			);
 			path = CommonCode;
+			sourceTree = "<group>";
+		};
+		0C64442B207EF8CC0040C6F0 /* CommonCodeCollection */ = {
+			isa = PBXGroup;
+			children = (
+				0C64442C207EF8CC0040C6F0 /* CommonCodeCollection.h */,
+				0C64442D207EF8CC0040C6F0 /* CommonCodeCollection.m */,
+			);
+			name = CommonCodeCollection;
+			path = CommonCode/CommonCodeCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C644415207EF8540040C6F0 /* ViewController.m in Sources */,
+				0C64442E207EF8CC0040C6F0 /* CommonCodeCollection.m in Sources */,
 				0C644420207EF8580040C6F0 /* main.m in Sources */,
 				0C644412207EF8540040C6F0 /* AppDelegate.m in Sources */,
 			);
