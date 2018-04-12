@@ -14,6 +14,7 @@
 		0C64441D207EF8580040C6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C64441B207EF8580040C6F0 /* LaunchScreen.storyboard */; };
 		0C644420207EF8580040C6F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C64441F207EF8580040C6F0 /* main.m */; };
 		0C64442E207EF8CC0040C6F0 /* CommonCodeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C64442D207EF8CC0040C6F0 /* CommonCodeCollection.m */; };
+		0C644431207EF9710040C6F0 /* HYString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C644430207EF9710040C6F0 /* HYString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		0C64441F207EF8580040C6F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C64442C207EF8CC0040C6F0 /* CommonCodeCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCodeCollection.h; sourceTree = "<group>"; };
 		0C64442D207EF8CC0040C6F0 /* CommonCodeCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCodeCollection.m; sourceTree = "<group>"; };
+		0C64442F207EF9710040C6F0 /* HYString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYString.h; sourceTree = "<group>"; };
+		0C644430207EF9710040C6F0 /* HYString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 		0C644404207EF8540040C6F0 = {
 			isa = PBXGroup;
 			children = (
+				0C644432207F14570040C6F0 /* Controllers */,
 				0C64442B207EF8CC0040C6F0 /* CommonCodeCollection */,
 				0C64440F207EF8540040C6F0 /* CommonCode */,
 				0C64440E207EF8540040C6F0 /* Products */,
@@ -80,9 +84,19 @@
 			children = (
 				0C64442C207EF8CC0040C6F0 /* CommonCodeCollection.h */,
 				0C64442D207EF8CC0040C6F0 /* CommonCodeCollection.m */,
+				0C64442F207EF9710040C6F0 /* HYString.h */,
+				0C644430207EF9710040C6F0 /* HYString.m */,
 			);
 			name = CommonCodeCollection;
 			path = CommonCode/CommonCodeCollection;
+			sourceTree = "<group>";
+		};
+		0C644432207F14570040C6F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			path = CommonCode/Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +172,7 @@
 				0C644415207EF8540040C6F0 /* ViewController.m in Sources */,
 				0C64442E207EF8CC0040C6F0 /* CommonCodeCollection.m in Sources */,
 				0C644420207EF8580040C6F0 /* main.m in Sources */,
+				0C644431207EF9710040C6F0 /* HYString.m in Sources */,
 				0C644412207EF8540040C6F0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
