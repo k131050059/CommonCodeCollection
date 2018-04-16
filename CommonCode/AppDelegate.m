@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YYFPSLabel.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window.rootViewController = [[UIViewController alloc]init];
-    [self.window addSubview:[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0) ];
+    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)] ];
  
     
     return YES;
@@ -60,6 +61,31 @@
     }
     return _window;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end
